@@ -1,0 +1,12 @@
+extends layout
+
+block content
+    h1 Files
+    each value in files
+        ul= value
+    br
+    form
+        input(type='text' name='file')#editor
+        br
+        input(type='submit' name='Save File').buttons
+        input(type='button' name='Delete File').buttons
